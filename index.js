@@ -32,6 +32,7 @@ const startApp = async () => {
   switch (choice) {
     case 'View all departments':
       const departments = await getAllDepartments();
+      console.log(departments);
       console.table(departments);
       break;
     case 'View all roles':
